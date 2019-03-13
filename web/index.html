@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>BMI Calculator</title>
+
+    <style type="text/css">
+        body {margin: 2em 2em auto 2em; max-width: 50em;}
+    </style>
+
+</head>
+
+<body>
+    <h1>BMI Calculator</h1>
+    <form action = "/calculate" method="get">
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label>Height</label>
+                <input type="number" class="form-control" name="height" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="col-xs-1">
+                <label>Unit</label>
+                <select name="height-unit" class="form-control" id="exampleFormControlSelect1" required>
+                    <option value="cm">cm</option>
+                    <option value="inches">inches</option>
+                </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label>Weight</label>
+                <input type="number" class="form-control" name="weight" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="col-xs-1">
+                <label>Unit</label>
+                <select name="weight-unit" class="form-control" id="exampleFormControlSelect2" required>
+                    <option value="kg">kg</option>
+                    <option value="pounds">pounds</option>
+                </select>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Calculate</button>
+    </form>
+</body>
+</html>
