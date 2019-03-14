@@ -31,7 +31,7 @@ public class BmiServlet extends HttpServlet {
             writer.printf("<div style=\";font-size:16px;margin:25px;\">Value of yours body mass index: " + proportion);
             writer.println("<br/>" + showInfo(proportion) + "</div>");
         } catch (Exception e) {
-            writer.println("Wystąpił błąd.");
+            writer.println("An error occured.");
         }
 
     }
